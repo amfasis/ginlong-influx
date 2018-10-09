@@ -1,0 +1,14 @@
+[DEFAULT]
+listen_address = 0.0.0.0
+listen_port = 3200
+
+[Logging]
+log_path = /var/log/ginlong
+do_raw_log = yes
+
+
+[InfluxDB]
+database = telemetry
+influx_server = localhost
+influx_port = 8086
+measurement = PV
