@@ -32,8 +32,8 @@ Personally I use this script on a Raspberry Pi and have set up the logging direc
 3. You can start the service: `sudo systemctl ginlong-listen.service start`
 
 ## Data collection
-1. Log into the WiFi stick, and configure the second IP (Server B) option to point to the server that this daemon is running on. (Daemon defaults to port 9999)
-2. You can check if data is coming in by examining the raw log, which is by config-ini-default in `/var/log/ginlong/raw.log`. Note that the WiFi stick sends data roughly every 6 minutes (in my case)
+1. Log into the WiFi stick, and configure the second IP (Server B) option to point to the server that this daemon is running on. (Daemon defaults to port 9999). I'm not sure, but maybe it's worth noting the stick is configured for 'data-collection' (other option for me is transparency).
+2. You can check if data is coming in by examining the raw log, which is by config-ini-default in `/var/log/ginlong/raw.log`. Note that the WiFi stick sends data roughly every 6 minutes (in my case) if there is enough solar power to keep the inverter on for long enough.
 3. These items should now be(/become) accessible in your database. If you have grafana set up, you should also be able to start producing graphs
 
 
