@@ -37,7 +37,8 @@ Personally I use this script on a Raspberry Pi and have set up the logging direc
 3. These items should now be(/become) accessible in your database. If you have grafana set up, you should also be able to start producing graphs
 
 
-
+## Known issues
+Occasionally I have to restart the service, the inverter still says the server is pingable, no error is reported but data is not passed to Influx. I setup some checking to see when I have to restart it (taking into account the hours that the sun is shining etc ;-) )
 
 # More protocols
 I had the idea to make the script such that other people could write a protocol-config file and select that through the config.ini. 
